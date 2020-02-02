@@ -21,8 +21,8 @@ namespace Blog2.Controllers
         [Authorize]
         public IActionResult Index()
         {
-            //  View(db.Posts.ToList());
-            return Content(User.Identity.Name);
+            //  Content(User.Identity.Name);
+            return View(db.Posts.ToList());
         }
 
         public IActionResult Privacy()
